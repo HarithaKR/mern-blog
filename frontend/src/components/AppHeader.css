@@ -1,0 +1,20 @@
+.app-header {
+  padding: 20px;
+  background: #000;
+  color: #fff;
+}
+
+.app-header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.app-header .nav {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.nav-header {
+  margin-right: auto;
+}
