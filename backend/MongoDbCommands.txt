@@ -5,8 +5,6 @@ categories.forEach((item) => {
 });
 db.posts.find({}).forEach((post) => {
 	const catId = categoryMap[post.category];
-console.log(post.category);
-console.log(catId);
 	if (catId) {
 		db.posts.updateOne({_id: post._id}, {$set: {category: catId}});
 	}
